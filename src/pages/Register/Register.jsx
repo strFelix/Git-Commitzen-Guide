@@ -23,13 +23,13 @@ const Register = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     const user = autorizedUsers.find(
-      (user) => user.email != password || user.password !== email
+      (user) => user.email === email && user.password === password
     );
-    if (!user) {
-      alert("Usuário não autorizado.");
-    } else {
+    if (user) {
       alert("Usuário autorizado.");
       e.target.reset();
+    } else {
+      alert("Usuário não autorizado.");
     }
   };
 

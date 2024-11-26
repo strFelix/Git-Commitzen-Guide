@@ -1,5 +1,6 @@
 import "./Register.css";
 import { useState } from "react";
+import Input from "../../components/Input";
 
 const Register = () => {
   const [email, setEmail] = useState("");
@@ -41,19 +42,19 @@ const Register = () => {
         </div>
         <form id="form" className="form" onSubmit={handleSubmit}>
           <div className="form-control">
-            <label htmlFor="email">Email</label>
-            <input
-              type="text"
+            <Input
               id="email"
-              placeholder="Digite seu email.."
+              label="Email"
+              type="email"
+              placeholder="Digite seu email..."
               onChange={onEmailChange}
             />
           </div>
           <div className="form-control">
-            <label htmlFor="password">Senha</label>
-            <input
-              type="password"
+            <Input
               id="password"
+              label="Senha"
+              type="password"
               placeholder="Digite sua senha..."
               onChange={onPasswordChange}
             />

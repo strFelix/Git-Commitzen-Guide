@@ -39,7 +39,7 @@ const Register = () => {
         <div className="header">
           <h2>Entrar</h2>
         </div>
-        <form id="form" className="form">
+        <form id="form" className="form" onSubmit={handleSubmit}>
           <div className="form-control">
             <label htmlFor="email">Email</label>
             <input
@@ -58,7 +58,7 @@ const Register = () => {
               onChange={onPasswordChange}
             />
           </div>
-          {/*  */}
+          <input type="submit" value="Enviar" />
         </form>
       </div>
     </>

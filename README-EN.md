@@ -66,10 +66,10 @@ This repository was created to introduce and practice the use of the **Commitize
    1.2. Add **scopes** and descriptions (optional).  
 
 ### Task List:
-- [ ] Properly indent the code and remove debug lines and unnecessary comments.  
-- [ ] Add a submit button on the registration screen and link it to the `sendForm()` function.  
-- [ ] Check and fix the page redirection after form submission.  
-- [ ] Componentize the submit button for reuse in other parts of the project.  
+- [ ] Indent the code properly and remove debug lines and unnecessary comments.
+- [ ] Add a submit button to the registration screen and link the form to the handleSubmit() function. 
+- [ ] Check and fix the authorization for authenticated users after form submission.
+- [ ] Create a component for the form input to enable reuse in other parts of the project.
 
 2. Update the project documentation by marking completed tasks with [X], following the described standards.  
 
